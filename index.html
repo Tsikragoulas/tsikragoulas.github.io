@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+        <title>ΤΣΙΚΡΑΓΟΥΛΑΣ</title>
+    </head>
+
+    <body>
+      <div class="background">
+            <header>
+                <div class="navbar">
+                    <div class="logo"><a href="#">TSIKRAGOULAS</a></div>
+                    <ul class="links">
+                        <li><a href="hero">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                    <a href="#" class="action_btn">Get Started</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                
+
+                <div class="dropdown_menu">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li> <a href="#" class="action_btn">Get Started</a> </li>
+                </div>
+            </header>
+
+            <main>
+                <section id="hero">
+                    <h1>TSIKRAGOULAS</h1>
+                    <p>Ολοκληρωμένες Υπηρεσίες στην Αγορά Ακινήτων</p>
+                </section>
+            </main>
+      </div>
+      <div class="background2">
+            <div class="houses"> 
+                <div class="header-text">
+                    <h1>Ακίνητα</h1>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Φωτογραφιες/e6f3f6e6-e50e-4a4c-82b1-c46e076f83cd.webp">
+                        <div class="card-content">
+                            <h1>Τρίκαλα</h1>
+                            <p>&#x2022; Τοποθεσία: Κονδύλη & Παπάγου<br>
+                                &#x2022; 2 Υπνοδωμάτια <br>
+                                &#x2022; 1 Μπάνιο <br>
+                                &#x2022; Πλήρως Επιπλωμένο <br>
+                                &#x2022; Ηλιακό 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="about">
+                <div class="contact">
+                </div>
+            </div>
+      </div>  
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>
